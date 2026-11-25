@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320" role="img" aria-labelledby="title desc">
+  <title id="title">Minh họa món ăn Bếp Nhà</title>
+  <desc id="desc">Đĩa thức ăn minh họa, chưa phải ảnh món thực tế.</desc>
+  <rect width="480" height="320" fill="#faf7ee"/>
+  <ellipse cx="240" cy="160" rx="112" ry="96" fill="#fff" stroke="#216147" stroke-width="6"/>
+  <ellipse cx="240" cy="160" rx="82" ry="68" fill="#f6dfac"/>
+  <path d="M205 160q35-65 70 0q-35 65-70 0" fill="#216147"/>
+  <circle cx="200" cy="185" r="17" fill="#df8b41"/>
+  <circle cx="275" cy="130" r="17" fill="#df8b41"/>
+</svg>

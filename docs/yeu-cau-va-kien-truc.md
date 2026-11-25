@@ -102,12 +102,14 @@ tiếp nhận cạnh tranh, cập nhật có điều kiện để chỉ một th
 | GET | /orders | Danh sách, bổ sung lọc bàn/lượt | 3–5 |
 
 Endpoint hủy/hoàn thành và phản hồi lỗi được định nghĩa khi triển khai tuần 6.
-Tuần 1 chỉ có endpoint kiểm tra trong README, chưa giả lập nghiệp vụ.
+Tuần 1 chỉ có endpoint kiểm tra. Tuần 2 đã có GET /menu từ PostgreSQL,
+migration/seed và model dữ liệu; xem README và database-tuan-2.md.
 
 ## Triển khai và lộ trình
 
 Mỗi service .NET sẽ có Dockerfile riêng; docker-compose.yml ghép bốn ứng dụng,
-PostgreSQL và RabbitMQ ở tuần 8. Container gọi qua Docker network/service name
+PostgreSQL và RabbitMQ ở tuần 8. Tuần 2 đã có Compose cho riêng PostgreSQL có volume;
+các service .NET vẫn chạy trên host. Container gọi qua Docker network/service name
 (order-api, postgres, rabbitmq), không dùng localhost cho container khác.
 Trình duyệt dùng URL host được publish; URL nội bộ khác URL trình duyệt.
 Connection string, broker, URL và port nằm trong cấu hình môi trường.
